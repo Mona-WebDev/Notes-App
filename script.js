@@ -11,13 +11,14 @@ mainContainer.innerHTML = localStorage.getItem("savedNotesHTML") || "";
 function createTask() {
   let noteTemplate = `
     <div class="contentContainer">
-      <p contenteditable="true" class="inputBox" onclick='updateStorage()'></p>
-      <i class="trash fa-solid fa-trash-can fa-fade" onclick="Basket(this)"></i>
+      <p contenteditable="true" class="inputBox"  ></p>
+      <i class="check fa-solid fa-check fa-wag" onclick='updateStorage()'></i>
+      <i class="trash fa-solid fa-trash-can " onclick="Basket(this)"></i>
     </div>
   `;
   updateStorage();
   mainContainer.insertAdjacentHTML("afterbegin", noteTemplate);
-  document.querySelector(".wag").style.display = "none";
+  // document.querySelector(".wag").style.display = "none";
 
   //  إضافة النوت الجديدة بأسفل القائمة بسلام وبدون مسح النصوص القديمة يضغها قبل النهايه او بعد البدايه
   // mainContainer.insertAdjacentHTML("beforeend", noteTemplate);
@@ -25,8 +26,14 @@ function createTask() {
 
 function Basket(target) {
   target.parentElement.remove();
+  updateStorage();
+  
 }
 
 function updateStorage() {
   localStorage.setItem("savedNotesHTML", mainContainer.innerHTML);
 }
+
+// if (!mainContainer.innerHTML ) {
+//   document.querySelector(".wag").style.display = "none";
+// }
