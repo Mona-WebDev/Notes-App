@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="shortcut icon" href="./img/notes.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/1c001ed397.js" crossorigin="anonymous"></script>
+    <!-- type writer effect -->
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <div class="header">
+        <i class="penIcon fa-solid fa-pen-to-square fa-fade"></i>
+        <!-- <img src="./img/notes.png" alt=""> -->
+        <p class="typing">Write your  <span id="typed-text"></span></p>
+    </div>
+
+    <div class="createNotes">
+        <button onclick="createTask()" >create Notes  <i class="fa-solid fa-pen "></i> </button>
+    </div>
+    <div class="contentContainer" >
+        <!-- <p contenteditable="true" class="inputBox">
+        </p>
+        <i class="trash fa-solid fa-trash-can fa-fade" onclick="Basket()"></i> -->
+    </div>
+    <div class="noteSticky">
+        <i class=" wag fa-regular fa-note-sticky fa-beat-fade"></i> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

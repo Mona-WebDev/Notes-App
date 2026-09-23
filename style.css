@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(#941f8d,#571094);
+    min-height: 100vh;
+
+      font-family: "Poppins", sans-serif;
+      background-repeat: no-repeat;
+
+}
+/* start style for header */
+.header{
+    margin-top:90px ;  
+}
+.header,.createNotes,.contentContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    margin-left: 30px;
+    color: rgba(255, 255, 255, 0.749);
+}
+.typing{
+    font-size: 30px;
+}
+#typed-text{
+    font-weight: 800;
+}
+.header .penIcon{
+    font-size: 35px;
+}
+/* start style for createNotes */
+.createNotes{
+    margin-top: 40px;
+}
+.createNotes button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: linear-gradient(#28004a,#ffffff00,#28004a);
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+}
+/* start style for contentContainer */
+.contentContainer{
+    margin-top: 20px;
+    position: relative;
+    width: 300px;
+display: block;
+ }
+.contentContainer p{
+    border-radius: 20px;
+}
+.inputBox{
+width: 100%;
+min-height: 150px;
+    background-color: white;
+    color: #28004a;
+    border: none;
+    outline: none;
+    padding: 20px;
+}
+.contentContainer .trash{
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+    position: absolute;
+    color: #28004a;
+}
+.noteSticky{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.noteSticky .wag{
+        color: #27004a28;
+        margin-top: 100px;
+        font-size: 100px;
+        display: none;
+}
