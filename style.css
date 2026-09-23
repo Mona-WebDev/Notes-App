@@ -65,12 +65,25 @@ min-height: 150px;
     outline: none;
     padding: 20px;
 }
-.contentContainer .trash{
+.contentContainer .trash,.contentContainer .check{
     bottom: 25px;
-    right: 25px;
     cursor: pointer;
     position: absolute;
+
+}
+.contentContainer .trash{
+    left: 25px;
     color: #28004a;
+    font-size: 20px;
+    
+}
+.contentContainer .check{
+    right: 25px;
+    color: white;
+    background-color: #28004a;
+    padding: 5px;
+    border-radius: 20px;
+
 }
 .noteSticky{
     display: flex;
